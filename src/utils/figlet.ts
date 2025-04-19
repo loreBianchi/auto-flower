@@ -8,3 +8,12 @@ export function printFiglet(text: string) {
   });
   console.log(chalk.cyanBright(ascii));
 }
+
+export function printHeader() {
+  const header = figlet.textSync('Prisma CLI', {
+    font: 'Slant',
+    horizontalLayout: 'default',
+    verticalLayout: 'default',
+  });
+  console.log(chalk.cyanBright(header));
+}
